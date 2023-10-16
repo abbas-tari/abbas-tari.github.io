@@ -5,7 +5,7 @@ image: "/static/images/abbas8.jpg"
 # Globals.
 # -------------------------------------------------------
 
-show_drafts: nil
+show_drafts: false
 permalink: /:title/
 
 include: ['_pages']
