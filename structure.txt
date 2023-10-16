@@ -2,16 +2,6 @@
 ├── 404.html
 ├── CNAME
 ├── _code
-│   ├── 2013-09-16-git-and-unity-projects.md
-│   ├── 2013-10-08-unity-paint-part-1.md
-│   ├── 2013-10-09-unity-paint-part-2.md
-│   ├── 2013-12-12-water-line-2d-unity.md
-│   ├── 2014-03-05-unity-scrolling-background.md
-│   ├── 2014-04-01-unity-cheatcode.md
-│   ├── 2014-04-01-unity-timer.md
-│   ├── 2014-09-09-unity-expandable-laser.md
-│   ├── 2016-10-07-pico8-platformer-basis.md
-│   └── 2016-10-17-water-surface-2d-unity.md
 ├── code.html
 ├── _config.yml
 ├── Gemfile
@@ -40,15 +30,10 @@
 │   ├── 2022-01-01-paper-rnn.md
 │   ├── 2022-07-01-paper-pbs.md
 │   ├── 2023-03-01-paper-rl.md
-│   └── 2023-06-01-paper-raft.md
+│   ├── 2023-06-01-paper-raft.md
+│   └── 2023-09-01-paper-trust.md
 ├── projects.html
 ├── _protos
-│   ├── 2011-11-15-rabbit-apocalypse.md
-│   ├── 2013-04-22-george.md
-│   ├── 2013-11-18-pixpuzzle.md
-│   ├── 2014-01-11-rampaint.md
-│   ├── 2014-01-29-the-killing-coconut-1gam.md
-│   └── 2016-04-29-orage.md
 ├── README.md
 ├── _site
 │   ├── 404.html
@@ -79,6 +64,8 @@
 │   ├── paper-rl
 │   │   └── index.html
 │   ├── paper-rnn
+│   │   └── index.html
+│   ├── paper-trust
 │   │   └── index.html
 │   ├── projects
 │   │   └── index.html
@@ -141,7 +128,9 @@
 │   │   │   │   ├── models.jpg
 │   │   │   │   ├── paper.pdf
 │   │   │   │   └── RNNnoden.jpg
-│   │   │   └── roll.png
+│   │   │   ├── roll.png
+│   │   │   └── trust
+│   │   │       └── cover.png
 │   │   ├── css
 │   │   │   ├── highlighter.css
 │   │   │   ├── normalize.css
@@ -230,7 +219,9 @@
 │   │   │   ├── models.jpg
 │   │   │   ├── paper.pdf
 │   │   │   └── RNNnoden.jpg
-│   │   └── roll.png
+│   │   ├── roll.png
+│   │   └── trust
+│   │       └── cover.png
 │   ├── css
 │   │   ├── highlighter.css
 │   │   ├── normalize.css
@@ -263,4 +254,4 @@
 ├── structure.txt
 └── work
 
-55 directories, 208 files
+58 directories, 196 files
