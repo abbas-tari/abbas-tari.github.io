@@ -1,0 +1,83 @@
+title: Abbas Tariverdi (Abo)
+
+# -------------------------------------------------------
+# Globals.
+# -------------------------------------------------------
+
+show_drafts: nil
+permalink: /:title/
+
+include: ['_pages']
+exclude: ['README.md', 'LICENSE', 'package.json', 'gulpfile.js', 'node_modules', 'Gemfile', 'Gemfile.lock']
+
+excerpt_separator: <!--more-->
+
+# -------------------------------------------------------
+# Collections.
+# -------------------------------------------------------
+
+collections:
+  projects:
+    output: true
+    permalink: /:title/
+  protos:
+    output: true
+    permalink: /:title/
+  events:
+    output: true
+  code:
+    output: true
+    permalink: /:title/
+
+# -------------------------------------------------------
+# Defaults.
+# -------------------------------------------------------
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "code"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "post"  
+  - scope:
+      path: ""
+      type: "protos"
+    values:
+      layout: "post"
+
+# -------------------------------------------------------
+# Markdown.
+# -------------------------------------------------------
+
+kramdown:
+  input: GFM
+  parse_block_html: true
+  parse_span_html: true
+
+# -------------------------------------------------------
+# Code.
+# -------------------------------------------------------
+
+highlighter: rouge
+
+# -------------------------------------------------------
+# Plugins.
+# -------------------------------------------------------
+
+plugins:
+  - jekyll-redirect-from
