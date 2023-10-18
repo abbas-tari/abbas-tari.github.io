@@ -1,6 +1,6 @@
 # Abbas Tariverdi's blog
 
-My personal blog: [https://abbasta.com](https://abbasta.com)
+My personal blog: [https://www.abbasta.com](https://www.abbasta.com)
 
 Made with Jekyll & GitHub pages.
 
