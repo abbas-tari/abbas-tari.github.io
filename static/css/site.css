@@ -403,9 +403,15 @@ strong {
   background-color: #FF0066;
 }
 
-.python {
-  background-color: #2D5EFF;
-}
+.python { background-color: #FFD43B; /* yellow */ }
+
+.go { background-color: #00ADD8; /* blue */ }
+
+.cpp { background-color: #F34B7D; /* orange */ }
+
+.java { background-color: #007396; /* dark blue */ }
+
+.c\# { background-color: #9A4993; /* purple */ }
 
 /**************************************************************
  * Justify text
