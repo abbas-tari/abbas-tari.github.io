@@ -82,3 +82,5 @@ highlighter: rouge
 
 plugins:
   - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-seo
