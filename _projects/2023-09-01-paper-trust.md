@@ -7,30 +7,26 @@ shortdesc: (2023) exploring dynamics through multiagent-driven modeling for simu
 
 <div class="justify-text">
 
-## Description
+## Abstract
 **This is still work in progress, so over time I try to complete the post here.**
 
-Here, we talk about an agent-based modeling
-framework for simulating the dynamics of ethical trust within a
-population of agents. Our model incorporates time-variant dynamic attributes, such as rationality, trustworthiness, reliability,
-and reputation, to capture the complexities of trust evolution.
-We explore the impact of various interaction rules and agent
-cluster configurations on the trust dynamics, while accounting
-for external disturbances and noise. Through various simulations,
-we provide insights into the emergent behaviors and resilience
-of trust networks under different scenarios, contributing to a
-deeper understanding of ethical trust formation and maintenance
-in multi-agent systems. This approach has potential applications
-in designing robust, trustworthy, and adaptive sociotechnical
-systems.
+Here, we begin by exploring the rationality of ethical trust as a foundational concept. This exploration involves distinguishing between trust and trustworthiness and delving into scenarios where trust is both rational and moral. It lays the groundwork for understanding the complexities of trust dynamics in high-stakes decision-making scenarios.
+Following this theoretical groundwork, we introduce an agent-based simulation framework that investigates these dynamics of ethical trust, specifically in the context of disaster response scenarios. This framework is designed to simulate the behavior of autonomous agents representing various humanitarian organizations. These agents, utilizing advanced emotional models like Plutchik's Wheel of Emotions and memory learning mechanisms, are tasked with allocating limited resources in disaster-affected areas. Their decision-making is influenced by a myriad of factors, including unique priorities, perceptions of urgency, and diverse approaches to disaster management.
+The model, which embodies the principles discussed in the first section, integrates cognitive load management, Big Five personality traits, and structured interactions within networked or hierarchical settings. It also includes feedback loops and simulates external events to evaluate their impact on the formation and evolution of trust among agents. Through our simulations, we demonstrate the intricate interplay of cognitive, emotional, and social factors in ethical decision-making. These insights shed light on the behaviors and resilience of trust networks in crisis situations, emphasizing the role of rational and moral considerations in the development of trust among autonomous agents.
+This study contributes to the field by offering a comprehensive understanding of trust dynamics in socio-technical systems and by providing a robust, adaptable framework capable of addressing ethical dilemmas in disaster response and beyond.
 
-Trust is a complex and multidimensional concept that involves moral, social, psychological, and rational aspects. It is essential for human cooperation and well-being, but it can also be vulnerable to betrayal, deception, and manipulation.
-Ethical theories of trust can be divided into two main categories: deontological and consequentialist. Deontological theories focus on the duties and obligations of the trustor and the trustee, while consequentialist theories evaluate the outcomes and consequences of trusting or being trusted.
-Mathematical modelling is a useful tool for studying trust, as it can capture the dynamics and feedback loops of trust-related phenomena, such as cooperation, reputation, reciprocity, risk, uncertainty, and learning. Mathematical models can also test different scenarios and policies that may affect trust levels and outcomes.
-Two common types of mathematical models for trust are system dynamics models (SDM) and agent-based models (ABM). SDM are top-down models that represent the aggregate behaviour of a system using differential equations, while ABM are bottom-up models that simulate the interactions of individual agents using rules and algorithms- Trust is a complex and multidimensional concept that involves moral, social, psychological, and rational aspects. It is essential for human cooperation and well-being, but it can also be vulnerable to betrayal, deception, and manipulation.
-Ethical theories of trust can be divided into two main categories: deontological and consequentialist. Deontological theories focus on the duties and obligations of the trustor and the trustee, while consequentialist theories evaluate the outcomes and consequences of trusting or being trusted.
-Mathematical modelling is a useful tool for studying trust, as it can capture the dynamics and feedback loops of trust-related phenomena, such as cooperation, reputation, reciprocity, risk, uncertainty, and learning. Mathematical models can also test different scenarios and policies that may affect trust levels and outcomes.
-Two common types of mathematical models for trust are system dynamics models (SDM) and agent-based models (ABM). SDM are top-down models that represent the aggregate behaviour of a system using differential equations, while ABM are bottom-up models that simulate the interactions of individual agents using rules and algorithms.
+## Introduction
+### Exploring Trust and Trustworthiness
+Max Otto's insights on trust set the stage for our exploration into the nuances of trust and trustworthiness, crucial in shaping our worldview and understanding of humanity. We examine the moral obligations surrounding trustworthiness and the discerning nature of trust, delving into the philosophical literature that distinguishes these concepts. This exploration provides a deep understanding of the moral imperatives associated with trustworthiness and the situational, context-dependent nature of trust.
+
+### Understanding Trust Limits and Rationality
+Further, we explore 'Trust Limits,' emphasizing the multi-dimensional nature of trust, which includes self-trust and trust in external entities. We discuss the necessity of discernment in trusting, considering the benefits and drawbacks in different relationships. The section concludes with an analysis of 'Trust Rationality,' exploring scenarios where trust aligns with rational and moral principles, drawing insights from various philosophical perspectives.
+
+### Transition to Computational Modeling
+We then transition to computational modeling, acknowledging the interplay of moral, psychological, and rational aspects in human relationships. Here, we highlight the importance of computational models in understanding these dynamics, discussing recent advancements in the field and their contributions to policy formulation and technology design. This section sets the stage for our own contribution: an Agent-based Cognitive Computational Model.
+
+### Agent-based Cognitive Computational Model
+Our contribution lies in the development of an Agent-based Cognitive Computational Model, designed to simulate ethical trust in collective decision-making. This model features Emotional Agents with advanced emotional models, memory, and learning capabilities, reflecting human cognitive processes in trust and ethics. We discuss how our model captures the dynamic nature of trust development and offers valuable insights for research in various fields.
 
 <div>
 
@@ -38,6 +34,7 @@ Two common types of mathematical models for trust are system dynamics models (SD
 
 
 ## <span id="Resources">Resources</span>
+Coming soon...! or contact me if you want them now `:)`
 
 <!-- <a class="arxiv-logo" href="https://arxiv.org/abs/2308.10097">Read or download the paper from</a>
 
