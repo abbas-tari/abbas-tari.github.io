@@ -19,15 +19,17 @@ While arranging images might seem mundane, it's a variant of the rectangle packi
 
 But, there's a catch. This problem is not as easy as it first appears. In fact, it's known as an NP-hard problem. Without delving too deep into computational theory, NP-hard problems are those where no efficient solution exists, and solutions can take an incredibly long time to compute as the input size grows. Over the years, many algorithms have been proposed to tackle the rectangle packing problem. Each has its strengths and weaknesses, and none are perfect.
 
-## Structure of the Solution: Two-Stage Optimization Problem
-The main objective is to place a set of images optimally on a canvas such that the unused space is minimized. The solution uses two stages:
+## Structure of the Solution: A Creative Twist on Two-Stage Optimization
+When faced with the challenge of minimizing unused space while arranging images on a canvas, we might be tempted to think it's a straightforward problem. However, the solution I've developed adds a dash of ingenuity to this seemingly simple puzzle. It's a testament to how a creative approach can transform a complex problem into an engaging and solvable challenge.
 
-### Finding the optimal canvas size:
-This involves a binary search approach to find a canvas size where all pictures fit without overlapping and the canvas is as square-like as possible.
-If no solution is found for the current set of pictures, the largest picture is removed, and the process is repeated.
-### Optimal placement of images on the canvas:
-Here, we use a constraint programming approach to place the images on the canvas without overlapping.
-Optionally, the images can be scaled to fit better and use less space.
+### Finding the Optimal Canvas Size: Not Just Any Binary Search
+The first stage of this journey uses a binary search method, but not in the way you might expect. This isn't your run-of-the-mill binary search; it's a clever adaptation that seeks the most 'square-like' canvas size. Why square-like? Because it often leads to the most aesthetically pleasing and space-efficient arrangements.
+
+And here's where it gets interesting: if we hit a roadblock and can't fit all the pictures, we don't just give up. Instead, we take a step back, remove the largest picture, and try again. This iterative process, much like an artist trying different compositions, ensures we find a canvas size that's just right.
+### Optimal Placement of Images on the Canvas: Constraint Programming with a Twist
+The second stage is where constraint programming shines. But it's not just about avoiding overlaps; it's about doing so in a way that's both efficient and visually appealing. We're not merely cramming images onto a canvas; we're orchestrating their placement with precision.
+
+What's more, we introduce the option of scaling images. This is not just scaling for the sake of it, but a strategic move to make the best use of available space. It’s akin to finding the perfect puzzle piece – sometimes a slight adjustment can make all the difference.
 
 ```python
 def find_optimal_canvas(pictures, ...):
@@ -147,14 +149,58 @@ def solve_optimal_arrangement(pictures, ... , num_search_workers=8, ...):
     ...
 ```
 
+## Results
 
+The following image showcases the solution of the optimization problem. It represents the optimal placement of images on the canvas, achieved through the described methodologies. This visualization helps in understanding how the images are arranged to minimize unused space, adhering to the constraints and objective functions defined in the model.
+
+<img src="{{ site.url }}/static/content/pack/solution_visualization.png" style="width:550px;height:auto;" alt="Image description" />
+
+## Optimization Log Summary
+
+```html
+Using initial picture dimensions: : [(3133, 2126), (2532, 721), (2983, 2156), (961, 640), (980, 1132), (3149, 2102)]
+Initial canvas size:           : 8000x8000 
+Optimized picture arrangement: : [(3133, 2126), (3149, 2102), (2983, 2156), (2532, 721), (980, 1132), (961, 640)]
+Trying canvas dimensions:      : 4480x4320. Solution found: No
+Trying canvas dimensions:      : 6240x4320. Solution found: Yes
+Trying canvas dimensions:      : 5360x4320. Solution found: No
+Trying canvas dimensions:      : 5800x4320. Solution found: No
+Trying canvas dimensions:      : 6020x4320. Solution found: No
+Trying canvas dimensions:      : 6130x4320. Solution found: Yes
+Trying canvas dimensions:      : 6075x4320. Solution found: No
+Trying canvas dimensions:      : 6102x4320. Solution found: No
+Trying canvas dimensions:      : 6116x4320. Solution found: Yes
+Trying canvas dimensions:      : 6109x4320. Solution found: No
+Trying canvas dimensions:      : 6112x4320. Solution found: No
+Trying canvas dimensions:      : 6114x4320. Solution found: No
+Trying canvas dimensions:      : 6115x4320. Solution found: No
+Optimal canvas dimensions:     : 6116x4320 
+Adjusted Alpha Below Minimum for Image Size : 2532x721  
+Area Ratio                     : 0.07      
+Adjusted Alpha Range           : (70, 150) 
+Bounding Box Area              : 26421120  
+Adjusted Alpha Below Minimum for Image Size : 980x1132  
+Area Ratio                     : 0.04      
+Adjusted Alpha Range           : (70, 150) 
+Bounding Box Area              : 26421120  
+Adjusted Alpha Below Minimum for Image Size : 961x640   
+Area Ratio                     : 0.02      
+Adjusted Alpha Range           : (70, 150) 
+Bounding Box Area              : 26421120  
+Alpha/Scaling factor for Image 0 : 100%      
+Alpha/Scaling factor for Image 1 : 104%      
+Alpha/Scaling factor for Image 2 : 99%       
+Alpha/Scaling factor for Image 3 : 112%      
+Alpha/Scaling factor for Image 4 : 122%      
+Alpha/Scaling factor for Image 5 : 150%  
+```
 <div>
 
 
 
 
 ## <span id="Resources">Resources</span>
-Will be updated soon...!
+Will be updated soon...! or contact me if you want them now `:)`
 
 <!-- <a class="arxiv-logo" href="https://arxiv.org/abs/2308.10097">Read or download the paper from</a>
 
