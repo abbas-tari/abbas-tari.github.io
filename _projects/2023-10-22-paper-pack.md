@@ -203,8 +203,8 @@ Alpha/Scaling factor for Image 5 : 150%
 
 <!-- <a class="arxiv-logo" href="https://arxiv.org/abs/2308.10097">Read or download the paper from</a> -->
 
-<a class="github-logo" href="https://github.com/abbas-tari/2d-packing-optimization">Github source code</a>
+<a class="github-logo" href="https://github.com/abbas-tari/2d-packing-optimization">Github source code [Python]</a>
 
-<!-- [Source Ccde]({{ site.url }}/static/content/rl/paper.pdf)
+<!-- [Source Ccde]({{ site.url }}/static/content/rl/paper.pdf) -->
 
 
