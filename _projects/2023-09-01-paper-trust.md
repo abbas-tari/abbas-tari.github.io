@@ -39,6 +39,6 @@ Our contribution lies in the development of an Agent-based Cognitive Computation
 
 <a class="github-logo" href="https://github.com/abbas-tari/ethical-trust-cognitive-modeling">Github source code</a> 
 
-<!-- [Source Ccde]({{ site.url }}/static/content/rl/paper.pdf)
+<!-- [Source Ccde]({{ site.url }}/static/content/rl/paper.pdf) -->
 
 
