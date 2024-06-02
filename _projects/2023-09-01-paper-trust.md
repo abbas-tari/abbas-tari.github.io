@@ -1,7 +1,7 @@
 ---
 title: Trust from Ethical Point of View
 tags: paper python
-image: static/content/trust/cover.png
+image: static/content/trust/emotions_over_time.png
 shortdesc: (2023) exploring dynamics through multiagent-driven modeling for simulating the dynamics of ethical trust within a population of agents incorporating time-variant dynamic attributes, such as rationality, trustworthiness, reliability, and reputation.
 ---
 
@@ -35,7 +35,7 @@ Our contribution lies in the development of an Agent-based Cognitive Computation
 
 ## <span id="Resources">Resources</span>
 
-<!-- <a class="arxiv-logo" href="https://arxiv.org/abs/2308.10097">Read or download the paper from</a> -->
+<a class="arxiv-logo" href="https://arxiv.org/abs/2401.07255">Read or download the paper from</a>
 
 <a class="github-logo" href="https://github.com/abbas-tari/ethical-trust-cognitive-modeling">Github source code</a> 
 
