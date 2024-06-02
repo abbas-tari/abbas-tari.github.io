@@ -1,7 +1,7 @@
 ---
 title: An Optimal Image Packing Algorithm
 tags: paper python go cpp java c#
-image: static/content/pack/cover2.png
+image: static/content/pack/solution_visualization.png
 shortdesc: (2023) Optimally arranging and scaling 2D images on a canvas using constraint programming using OR-tools. The implementation is done in Python, Go, C++, Java, and C#.
 ---
 
