@@ -9,23 +9,15 @@ shortdesc: (2016) A dive into nonlinear leader-follower Impedance consensus cont
 
 ## Description
 
-Alright, let's gather 'round because today I'm diving into the world of Multi-Agent Systems (MASs) and oh boy, it's a rollercoaster! Picture a gang of robots, each with its own mind, trying to agree on where to grab a digital coffee. Sounds simple, right? But toss in some nonlinear impedance surfaces (fancy term for a complex consensus agreement) into the mix, and you've got yourself a soap opera full of robotic drama.
+In this study, an impedance consensus algorithm is presented. This is a set of rules that allows a group of agents to agree on their "impedance"—that is, their stiffness or resistance when interacting with their environment. This agreement is critical for practical tasks, such as multiple robots cooperatively carrying a single fragile object (preventing them from breaking it) or for safely interacting with a human.
 
-Now, onto my paper that's taken a crack at this digital conundrum, titled "On Designing of Leader-Follower Impedance Consensus Controllers for Lagrangian Multi-Agent Systems." A mouthful, I know, but stick with me. I have cooked up an algorithm to help our robot gang reach a consensus on these so-called nonlinear impedance surfaces. In human speak, they're helping a bunch of robots agree on a complex task while navigating through a maze of real-world interactions.
+This algorithm is designed for leader-following Lagrangian Multi-Agent Systems (MASs), which are teams of moving robots (agents) modeled using energy-based physics, where one robot acts as the leader and the others are followers. The method works even with a directed communication topology, meaning the communication links between agents might only go in one direction (e.g., Robot A can send info to B, but B cannot send info to A).
 
-The cornerstone of this techno-saga is the Leader-Follower dynamic. Think of it as having one robot wearing a sheriff's badge, leading the rest of the bot posse through the wild, wild west of impedance surfaces. The algorithm ensures that the followers (the deputy bots, if you will) are in sync with Sheriff Bot, achieving a harmonious consensus in a finite amount of time.
+The system's stability is proven in the Input-to-State stability (ISS) sense, which guarantees that the team remains stable and predictable even if affected by small external disturbances. This is a key benefit, as it prevents minor errors from causing the robots to vibrate or waste energy by pushing and pulling against each other.
 
-What's the cherry on top? The sliding mode control method. This gem helps in achieving position and velocity consensus among our robotic comrades on the desired impedance surface. In layman’s terms, it's like having a choreographer ensuring that all robots are dancing in harmony to the same electric beat.
+A general class of desired behaviors, called nonlinear impedance surfaces, is introduced. This "surface" is essentially the target rulebook for how the agents should behave when they touch or push against their surroundings. It is shown that the follower agents achieve this impedance consensus (all agree on the target "feel") in finite time (a fixed, predictable amount of time, not just eventually). This works as long as a directed spanning tree exists in the communication network, meaning there is at least an indirect communication path from the leader to every single follower.
 
-Well, it may open doors to some cool real-world applications. Imagine a multi-user teleoperation system where multiple humans can control a group of robots remotely. With this algorithm, we're one step closer to having a well-coordinated robot army at our fingertips. And hey, who wouldn't want that?
-
-<!-- The study also hints at a future where these methods can be applied to more practical scenarios, making our interaction with autonomous systems a bit less of a headache. It’s like going from having a room full of toddlers running wild, to having a well-behaved class sitting quietly (well, as quiet as robots can be).
-
-So, while the paper may seem like it's wrapped in complex jargon and mathematical hoopla, at its core, it's about making life with robots a tad easier and more coordinated. And as we march towards a future filled with autonomous systems, getting our robot pals to play nice with each other on a complex playground is a pretty big, and hilarious, leap forward. -->
-
-But wait, there’s more. The paper also touches on some serious math mojo with propositions, lemmas, and equations that would make Pythagoras’ head spin. There's talk of directed graphs, Laplacian matrices, and Euler-Lagrange equations, all dancing in a mathematical ballet to the tune of robotic consensus.
-
-In a nutshell, this paper tosses a bunch of robots into a complex playground, appoints one as the leader, and uses some serious mathematical muscle to make sure everyone plays along nicely. And the beauty of it? It all happens in a finite amount of time, which in the robotic world, is the equivalent of a standing ovation.
+Finally, it is proved that the proposed method also solves position and velocity consensus, meaning all agents agree on where to be and how fast to move. This is achieved using a robust technique called the sliding mode control method, which ensures all agents reach their goals while maintaining the desired impedance and overall system stability (ISS). This dual achievement is what allows the team to successfully perform a complex task, like jointly polishing a curved surface, where they must all move in perfect sync while applying the exact same delicate pressure.
 <div>
 
 
