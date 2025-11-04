@@ -1,8 +1,8 @@
 ---
 title: Fault-Tolerant Controllers 
 tags: paper
-# image: static/content/ftc/topologies.png
-image: static/content/ftc/cover1.png
+image: static/content/ftc/topologies.png
+# image: static/content/ftc/cover1.png
 shortdesc: (2017) of Nonlinear Multi-Agent Systems with Directed Link Failures, Communication Noise and Actuator Faults
 ---
 
@@ -10,17 +10,13 @@ shortdesc: (2017) of Nonlinear Multi-Agent Systems with Directed Link Failures, 
 
 ## Description
 
-Alright, so let's dive into this robotic rendezvous we've been tinkering with. We've got these quirky robots, part of a larger squad known as Nonlinear Multi-Agent Systems (MASs). Now, these bots have a tiny hiccup—they struggle to agree on things when the communication channels decide to play the fritz or when their actuator buddies have a minor meltdown.
+This paper addresses the fault-tolerant control problem for multi-agent systems (MASs)—groups of interconnected agents such as robots or autonomous vehicles that coordinate their behavior. The primary objective is achieving "consensus," which means all agents' states converge to a common agreement using only local information from their neighbors. The challenge addressed here involves maintaining consensus when three critical problems occur simultaneously: directed link failures and recoveries in the communication network, communication noise that corrupts transmitted information, and actuator faults that reduce the effectiveness of agents' physical components.
 
-So, here we are, donning our virtual capes, embarking on a mission to make these bots sing the same tune amidst this digital static. We rolled out a strategy known as fault-tolerant control (FTC) using some cool tools like sliding mode control method and weak infinitesimal operation. It's like having a digital conductor waving a baton to orchestrate a robotic symphony, guiding our bot pals towards a consensus even when their digital world goes haywire.
+The communication network topology is modeled as randomly switching, with failures and recoveries governed by a Markovian jump process—a stochastic model where transitions between network configurations follow probabilistic rules. Communication noise represents the inevitable corruption of information due to imperfect sensors, electromagnetic interference, and quantization errors. Actuator faults refer to "loss-of-effectiveness" scenarios where motors or control mechanisms operate at reduced or degraded capacity. The work employs Sliding Mode Control (SMC), a robust control technique, combined with weak infinitesimal operation to develop a passive Fault-Tolerant Control (FTC) strategy. "Passive" indicates the controller does not require fault detection and isolation mechanisms—it inherently compensates for faults through its design.
 
-Now, we didn't just whip up theories and called it a day. Nope, we put our geeky concoction to test with some real-ish robotic scenarios. And guess what? Our algorithms didn't just make the grade; they danced through the chaos of miscommunications and actuator antics, proving that consensus among our robot squad is not a far-off dream.
+The main theoretical contribution establishes sufficient conditions for achieving consensus in the "mean square sense"—a statistical stability measure appropriate for stochastic systems where convergence is probabilistic rather than deterministic. The key requirement is that each possible communication topology must contain a "spanning tree," which is a connected graph structure ensuring information can propagate from at least one agent to all others. The proposed controller guarantees finite-time convergence to predefined stochastic sliding surfaces while maintaining robustness against all three disturbance types. Importantly, the controller design does not require precise knowledge of model uncertainties or bounds on nonlinear terms.
 
-We’re pretty chuffed with what the results. It’s like we’ve handed our robots a map and a compass in a storm of digital misadventures. And while we’ve made some headway, the road ahead is laden with more geeky quests. We’re eyeing the unchartered territories of network-induced time delays and getting to the bottom of those pesky actuator faults.
-
-So, as we bid adieu to this chapter, we're leaving the door ajar for more explorations in this robotic saga. There's a lot more to uncover, decode, and orchestrate in our quest to make these bots play nice in the sandbox of Nonlinear MASs, ensuring they hit the right notes even when the digital realm throws a curveball.
-
-This paper is our little contribution to the grand narrative of robotic consensus, a stepping stone towards a world where robots can harmonize their actions amidst the cacophony of digital uncertainties. And as we march forward, the plot thickens, with more codes to crack, algorithms to unravel, and robotic harmonies to compose.
+The theoretical framework transforms the consensus problem into a stochastic input-to-state stability problem for nonlinear switched systems. Validation is provided through numerical simulations of networked Euler-Lagrange systems—mathematical models representing mechanical systems with inherent physical constraints. This work represents the first comprehensive treatment simultaneously addressing nonlinearity, communication noise, directed link failures, and actuator faults in multi-agent consensus problems.
 <div>
 
 
