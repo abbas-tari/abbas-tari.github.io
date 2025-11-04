@@ -9,20 +9,11 @@ shortdesc: (2019) Actuator Fault and Link Failure Accommodation for Disturbed Mu
 <div class="justify-text">
 
 ## Description
+This work addresses Fault Tolerant Control (FTC) for Multi-User Telerehabilitation Systems (MUTSs), which are modeled as Itô stochastic differential equations—mathematical models that capture systems affected by random processes and noise. The system experiences actuator loss-of-effectiveness faults (motors operating at reduced capacity), directed link failures (communication connections that break and restore), communication noise (corrupted information transmission), and external disturbances. MUTSs represent a configuration where multiple remote robots (slaves) are controlled by a local robot (master), with slave states converging to the master's states using only local neighbor information.
 
-This work explores the intricacies of Fault Tolerant Control (FTC) within Multi-User Telerehabilitation Systems (MUTSs). These systems are modeled using Itô stochastic differential equations to encapsulate the real-world challenges such as actuator faults, directed link failures, communication noise, and disturbances.
+The proposed solution uses an active FTC strategy based on Adaptive Sliding Mode Control (ASMC). "Active" FTC means the controller adapts its parameters in response to detected faults. The ASMC method enables the system to achieve stochastic consensus in the mean square sense—a statistical measure where the expected squared deviation from consensus converges to zero—onto predefined stochastic switching sliding surfaces in finite time. Directed link failures are modeled using Markovian Jump Systems (MJSs), where the communication topology switches randomly according to probabilistic rules.
 
-Now, addressing these challenges head-on, we've proposed an adaptive strategy using the Adaptive Sliding Mode Control (ASMC) method. This strategy is like a well-crafted shield that helps the MUTSs reach a consensus amidst the chaos, ensuring a synchronized dance on predefined stochastic switching sliding surfaces in a finite time frame.
-
-The narrative takes a structured turn with the introduction of Markovian Jump Systems (MJSs), a studied domain that lends a structural framework to our control approach. It's akin to having a robust architectural plan before venturing into the construction of a complex edifice.
-
-The core aim here is to ensure Stochastic Input-to-State Stability (SISS) of the MUTSs. This is about maintaining a steady ship amidst turbulent waters, considering all the adversities like communication noise, actuator faults, and directed link failures. It's noteworthy to mention that this work pioneers in addressing the active FTC of MUTSs concerning these challenges, marking a significant stride forward in this domain.
-
-Diving deeper into the architectural blueprint of our venture, the Adaptive Sliding Mode Control (ASMC) method emerges as a robust pillar. It's meticulously discussed and is the backbone of the proposed control laws, which are designed to withstand the adversities and ensure a smooth operation of the MUTSs.
-
-The narrative reaches a reflective point with a detailed simulation, shedding light on the effectiveness of the proposed algorithms. It's the moment of truth where theories are put to the test, embodying the essence of practical validation.
-
-In conclusion, the focus sharpens on the fault-tolerant coordinated control for MUTSs amidst the common adversaries of directed link failures, communication noise, actuator faults, and disturbances. The Markovian jump process lays down the law of the land, governing the model of directed link failures as randomly switching topologies. This investigation not only lays down a robust foundation for addressing the challenges head-on but also opens up avenues for future explorations, like delving into communication time delays and sensor faults.
+The theoretical framework establishes Stochastic Input-to-State Stability (SISS), which guarantees that bounded inputs and disturbances produce bounded state deviations in a probabilistic sense. This represents the first comprehensive treatment of active FTC for MUTSs that simultaneously considers communication noise, actuator faults, directed link failures, and disturbances. Numerical simulations validate the effectiveness of the proposed control laws, demonstrating stable coordinated operation despite multiple concurrent fault types.
 <div>
 
 
