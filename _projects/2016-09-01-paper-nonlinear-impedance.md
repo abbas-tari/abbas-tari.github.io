@@ -2,7 +2,7 @@
 title: Impedance Consensus Controllers 
 tags: paper
 image: static/content/mass/cover3.png
-shortdesc: (2016) A dive into nonlinear leader-follower Impedance consensus controllers for multi-agent systems. An impedance consensus algorithm is presented for leader-following Lagrangian Multi-Agent Systems (MASs) with directed communication topology in the Input-to-State stability (ISS) sense.
+shortdesc: (2016) Nonlinear leader-follower impedance consensus controllers for multi-agent systems. An impedance consensus algorithm for leader-following Lagrangian MASs with directed communication topology, proven stable in the Input-to-State stability (ISS) sense.
 ---
 
 <div class="justify-text">
