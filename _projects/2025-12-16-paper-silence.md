@@ -2,7 +2,7 @@
 title: "When Silence Carries Information: Physics-Based Compression at the OT Edge"
 tags: paper control-systems edge-computing iot lyapunov
 image: static/content/silence/fig8_summary_dashboard.png
-shortdesc: (2024) Physics-based event-triggered control for efficient communication in OT edge systems.
+shortdesc: (2025) Physics-based event-triggered control for efficient communication in OT edge systems.
 ---
 
 <div class="justify-text">
