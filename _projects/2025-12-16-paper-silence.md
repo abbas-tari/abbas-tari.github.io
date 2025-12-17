@@ -1,7 +1,8 @@
 ---
 title: "When Silence Carries Information: Physics-Based Compression at the OT Edge"
-tags: control-systems edge-computing iot lyapunov
-shortdesc: Physics-based event-triggered control for efficient communication in OT edge systems.
+tags: paper control-systems edge-computing iot lyapunov
+image: static/content/silence/fig8_summary_dashboard.png
+shortdesc: (2024) Physics-based event-triggered control for efficient communication in OT edge systems.
 ---
 
 <div class="justify-text">
@@ -100,8 +101,10 @@ That's not a retreat from the promise of connected industry. It's the only way t
 
 </div>
 
-## References
+## <span id="Resources">Resources</span>
 
 <a class="substack-logo" href="https://abbasta.substack.com/p/when-silence-carries-information">Read the original article on Substack</a>
 
 <a class="arxiv-logo" href="https://arxiv.org/abs/2512.03604">Read the technical paper on arXiv</a>
+
+[Download the Paper]({{ site.url }}/static/content/silence/2512.03604v1.pdf)
