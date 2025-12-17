@@ -101,6 +101,24 @@ That's not a retreat from the promise of connected industry. It's the only way t
 
 </div>
 
+## References
+
+[1] While the 3GPP standard (TS 38.211) defines 64 physical preambles per cell, network configurations typically reserve a portion for contention-free operations (like handovers), leaving approximately 44–48 sequences for general access. In dense scenarios (up to 1 million devices per square kilometer), this limited pool results in high collision probability (3GPP TR 37.868).
+
+[2] F. Schlachter, "No Moore's Law for batteries," PNAS 110(14), 2013
+
+[3] G.J. Pottie and W.J. Kaiser, "Wireless Integrated Network Sensors," Communications of the ACM 43(5), 2000
+
+[4] W.P.M.H. Heemels, K.H. Johansson, and P. Tabuada, "An Introduction to Event-Triggered and Self-Triggered Control," IEEE CDC, 2012
+
+[5] NXP Semiconductors, "Measuring Interrupt Latency," Application Note AN12078, 2018
+
+[6] P. Koopman, "Perils of the PC Cache," Carnegie Mellon University
+
+[7] Calculated from STM32F4 datasheet (computation) and Semtech SX1276 datasheet (transmission)
+
+[8-12] arxiv.org/pdf/2512.03604
+
 ## <span id="Resources">Resources</span>
 
 <a class="substack-logo" href="https://abbasta.substack.com/p/when-silence-carries-information">Read the original article on Substack</a>
